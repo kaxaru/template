@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie ie8 lte9 lte8"><![endif]-->
+<!--[if IE 9]><html class="ie ie9 lte9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width", initial-scale="1.0")
+		meta(name="author", content)
+		meta(name="description", content)
+		link(rel="stylesheet", href="./dev/css/normalize.css")
+		link(rel="stylesheet", href="./dev/css/bootstrap.css")
+		link(rel="stylesheet", href="./dev/css/main.css")
+		link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300&subset=latin,cyrillic-ext,cyrillic")
+		title Moose
+	body
+		
+		include tmpl/header.jade
+		include tmpl/content.jade
+		include tmpl/slider.jade
+		include tmpl/footer.jade
+
+		script(src="./dev/js/jquery.js")
+		script(src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js")
+		script(src="./dev/js/slider.js")
+		script(src="./dev/js/main.js")

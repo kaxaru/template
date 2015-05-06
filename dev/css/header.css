@@ -1,0 +1,48 @@
+/*mixins*/
+.span-head {
+  font-size: 16px;
+  font-weight: 400;
+}
+/*#mixins*/
+.header__top {
+  margin-top: 40px;
+}
+.header__top-left {
+  float: left;
+}
+.header__top-left span {
+  font-size: 40px;
+  font-weight: 600;
+  color: #666666;
+}
+.header__top-right {
+  position: relative;
+  float: right;
+}
+.header__top-right .header__top-phone {
+  float: left;
+  margin-right: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.header__top-right .header__top-phone .phone {
+  background: url('../img/header/Phone.gif') no-repeat;
+  display: block;
+  float: left;
+  width: 14px;
+  height: 10px;
+  margin-right: 5px;
+}
+.header__top-right .header__top-mail {
+  float: right;
+  font-size: 16px;
+  font-weight: 400;
+}
+.header__top-right .header__top-mail .mail {
+  background: url('../img/header/Message-small.gif') no-repeat;
+  display: block;
+  float: left;
+  width: 14px;
+  height: 10px;
+  margin-right: 5px;
+}

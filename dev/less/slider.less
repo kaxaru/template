@@ -1,0 +1,85 @@
+.slide(){
+	li[class^='slide']{
+				width:20px;
+				height:20px;
+				display: block;
+				border: 2px solid @border-color;
+				border-radius: 50%;
+				//margin-right: 10px;
+			}
+			.active{
+				background-color: red;
+			}
+}
+
+.content-slider{
+	border: 1px solid @border-color;
+	background-color: @menu-color;
+	.container {
+		margin-top: 70px;
+		margin-bottom: 70px;
+	}
+	&__title {
+		text-align: center;
+		color: @title-color;
+		font-size: 16px;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+	}
+	&__text {
+		font-size: 15px;
+		color: @main-color;
+		text-indent: -15px;
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 50px;
+		width:70%;
+	}
+	&__begin {
+		position: relative;
+		max-height: 425px;
+		overflow: hidden;
+		&-el {
+				position:relative;
+				display: block;
+				//margin-left: -50%;
+		}
+			ul {
+				display: block;
+				overflow: hidden;
+				li {
+					margin-right: 10px;
+					margin-bottom: 50px;
+				}
+		}
+		&-description {
+			text-align: center;
+			padding: 20px 0;
+			border: 1px solid @border-color;
+			border-top: 0;
+		}
+		&-title {
+			text-transform: uppercase;
+			color: @main-color;
+			font-size: 16px;
+			font-weight: @weight-bold;
+		}
+		&-desc {
+			text-transform: uppercase;
+			color: #e1e1e1;
+			font-size: 14px;
+		}
+		&-control {
+			position: absolute;
+			top: 95%;
+			margin-left: 35%;
+			.slide;
+		}
+		div + &-el {
+				width: 15px;
+				height:15px;
+				border: 1px solid @border-color;
+				border-radius: 50%;
+		}
+	}
+}
